@@ -41,3 +41,33 @@ document.querySelector('.collapse-button').addEventListener('click', () => {
         }
     });
 });
+
+   function toggleDropdown(id) {
+    // Get all dropdowns
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+
+    // Loop through all dropdowns to close them
+    for (var i = 0; i < dropdowns.length; i++) {
+      if (dropdowns[i].id !== id) {
+        dropdowns[i].style.display = "none"; // Close any dropdown that isn't the clicked one
+      }
+    }
+
+    // Toggle the clicked dropdown
+    var dropdown = document.getElementById(id);
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";  // Hide if already shown
+    } else {
+      dropdown.style.display = "block"; // Show if hidden
+    }
+  }
+
+  // Close all dropdowns if the user clicks outside any dropdown
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].style.display = "none"; // Close all dropdowns
+      }
+    }
+  };
