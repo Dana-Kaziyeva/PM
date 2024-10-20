@@ -1,144 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 465 Project Management</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Top Navigation Bar -->
-    <header>
-        <div class="top-bar">
-            <div class="logo">
-                <img src="C:\Users\sahik\OneDrive\Документы\PM\logo_sdu_general.png">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Course</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Grades</a></li>
-                    <li><a href="#">🔔</a></li>
-                    <li><a href="#">User</a></li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | SDU UNIVERSITY</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;400;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<!--  TOP BAR-->
+      <div class="top-bar">
+        <div class="left-section">
+            <a href="dashboard/page.html">
+                <img src="https://moodle.sdu.edu.kz/pluginfile.php/1/theme_alpha/customlogo/1729248690/logo_sdu_general%20%281%29%20%282%29.png" alt="Logo" class="logo-img">
+            </a>
         </div>
-    </header>
-
-    <!-- Main Content -->
-   <main>
-        <div class="container">
-            <h1>My courses</h1>
-
-            <div class="course-overview">
-                <div class="search-bar">
-                    <input type="text" placeholder="Search">
-                </div>
-            </div>
-
-            <section class="courses">
-                <div class="course-card">
-                                       <div class="course-info">
-                        <h2>CSS 410 Research tools and methods</h2>
-                        <p>Fall 2024 (2024-2025)</p>
-                        <p>Gulsim Rysbayeva</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                                        <div class="course-info">
-                        <h2>CSS 465 Project Management</h2>
-                        <p>Fall 2024 (2024-2025)</p>
-                        <p>Assyl Abilakim</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                                        <div class="course-info">
-                        <h2>CSS 480 Industrial practice 3</h2>
-                        <p>Fall 2024 (2024-2025)</p>
-                        <p>Kuanyshbek Mamay</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                                       <div class="course-info">
-                        <h2>CSS 481 Industrial practice 3</h2>
-                        <p>Fall 2024 (2024-2025)</p>
-                        <p>Kuanyshbek Mamay</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                                        <div class="course-info">
-                        <h2>INF 228 UX/UI design</h2>
-                        <p>Fall 2024 (2024-2025)</p>
-                        <p>Ainura Yespayeva</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                                       <div class="course-info">
-                        <h2>INF 228 UX/UI design</h2>
-                        <p>Fall 2024 (2024-2025)</p>
-                        <p>Assel Tolep</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                                       <div class="course-info">
-                        <h2>INF 421 Security in Computer Networks</h2>
-                        <p>Fall 2024 (2024-2025)</p>
-                        <p>Inkar Shoganova</p>
-                    </div>
-                </div>
-                <div class="course-card">
-                                        <div class="course-info">
-                        <h2>INF 428 Data Ethics and Applied Analytics</h2>
-                        <p>Fall 2024 (2024-2025)</p>
-                        <p>Alikhan Nurlanuly</p>
-                    </div>
-                </div>
-            </section>
+        <div class="right-section">
+          <ul>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown('dropdown1')">
+                <i class="fa fa-bell-o icon"></i>
+              </a>
+              <div class="dropdown-content" id="dropdown1">
+                <a href="#">Notification 1</a>
+                <a href="#">Notification 2</a>
+                <a href="#">Notification 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown('dropdown2')">
+                <i class="fa fa-comment-o icon"></i>
+              </a>
+              <div class="dropdown-content" id="dropdown2">
+                <a href="#">Message 1</a>
+                <a href="#">Message 2</a>
+                <a href="#">Message 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown('dropdown3')">
+                <i class="fa fa-user-o icon"></i>
+              </a>
+              <div class="dropdown-content" id="dropdown3">
+                <a href="#">Name Surname</a>
+              </div>
+            </li>
+          </ul>
+          <!--          <a href="nofification-link">-->
+<!--            <i class="fa fa-bell-o icon"></i>-->
+<!--          </a>-->
+<!--          <a href="message-link">-->
+<!--            <i class="fa fa-comment-o icon"></i>-->
+<!--          </a>-->
+<!--          <a href="profile-link">-->
+<!--            <i class="fa fa-user-o icon"></i>-->
+<!--          </a>-->
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <p class="footer-heading">SDU UNIVERSITY</p>
-                <ul class="footer-links">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <p class="footer-heading">FACULTIES</p>
-                <ul class="footer-links">
-                    <li><a href="#">SDU Business School</a></li>
-                    <li><a href="#">Faculty of Engineering</a></li>
-                    <li><a href="#">Faculty of Education</a></li>
-                    <li><a href="#">Faculty of Law and Social Sciences</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <p class="footer-heading">RULES</p>
-                <ul class="footer-links">
-                    <li><a href="#">Charter</a></li>
-                    <li><a href="#">Safety Rules</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section address">
-                <p class="footer-heading">ADDRESS</p>
-                <p>Almaty region, Kaskelen district, 040900, Abylay Khan 1/1</p>
-            </div>
+      </div>
+      <div style="padding-top: 10% ">
+        <span class="my-courses">My courses</span>
+      </div>
+<!--      SEARCH BAR-->
+      <div class="rectangle-4">
+        <span class="search-icon"><i class="material-icons" style="font-size: smaller">search</i></span>
+        <input type="text" class="search-input" placeholder="Find...">
+      </div>
+<!--COURSE LIST-->
+      <div class="flex-list-column">
+        <div class="flex-list-row">
+          <div class="rectangle">
+            <span class="course-title">CSS 410 Research tools and methods</span>
+            <span class="course-teacher">(Zhumaniyaz Mamatnabiev)</span>
+            <span class="fall">Fall 2024 (2024-2025)</span>
+          </div>
+          <div class="rectangle">
+            <span class="course-title">CSS 465 Project Management</span>
+            <span class="course-teacher">(Assyl Abilakim)</span>
+            <span class="fall">Fall 2024 (2024-2025)</span>
+          </div>
+          <div class="rectangle">
+            <span class="course-title">CSS 480 Industrial practice 3</span>
+            <span class="course-teacher">(Kuanyshbek Mamay)</span>
+            <span class="fall">Fall 2024 (2024-2025)</span>
+          </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>SDU UNIVERSITY © All rights reserved</p>
-            <p>Mobile: +7 727 307 9655 | cid@sdu.edu.kz</p>
+        <div class="flex-list-row">
+          <div class="rectangle">
+            <span class="course-title">CSS 481 Industrial practice 3</span>
+            <span class="course-teacher">(Kuanyshbek Mamay)</span>
+            <span class="fall">Fall 2024 (2024-2025)</span>
+          </div>
+          <div class="rectangle">
+            <span class="course-title">INF 394 Introduction to Geographic Information Systems</span>
+            <span class="course-teacher">(Meirman Yzdykbayev)</span>
+            <span class="fall">Fall 2024 (2024-2025)</span>
+          </div>
+          <div class="rectangle">
+            <span class="course-title">INF 440 Digital Image Processing</span>
+            <span class="course-teacher">(Magzhan Kairanbay)</span>
+            <span class="fall">Fall 2024 (2024-2025)</span>
+          </div>
         </div>
-    </footer>
+        <div class="flex-list-row">
+          <div class="rectangle">
+            <span class="course-title">INF 426 IT Asset Management</span>
+            <span class="course-teacher">(Suraiyo Raziyeva)</span>
+            <span class="fall">Fall 2024 (2024-2025)</span>
+          </div>
+        </div>
+      </div>
+<!--      FOOTER -->
+      <div class="rectangle-14">
+        <div class="line-15"></div>
+        <div class="flex-container">
+          <div class="flex-columns">
+            <span class="titles">SDU UNIVERSITY</span>
+            <span class="nodes">About us</span>
+            <span class="nodes">Connect to us</span>
+          </div>
 
-    <script src="C:\Users\sahik\OneDrive\Документы\PM\script.js"></script>
-</body>
+          <div class="flex-columns">
+            <span class="titles">FACULTIES</span>
+            <span class="nodes">SDU BUSINESS SCHOOL</span>
+            <span class="nodes">FACULTY OF ENGINEERING <br />AND NATURAL SCIENCES</span>
+            <span class="nodes">FACULTY OF EDUCATION <br />AND HUMANITIES</span>
+            <span class="nodes">FACULTY OF LAW AND <br />SOCIAL SCIENCES</span>
+          </div>
+
+          <div class="flex-columns">
+            <span class="titles">RULES</span>
+            <span class="nodes">Charter</span>
+            <span class="nodes">Safety rules</span>
+          </div>
+
+          <div class="flex-columns">
+            <span class="titles">ADDRESS</span>
+            <span class="nodes">Almaty region, Karasai district.</span>
+            <span class="nodes">040900, city of Kaskelen, st. <br />Abylai Khan 1/1</span>
+          </div>
+        </div>
+        <div class="line-17"></div>
+        <div class="flex-row-daab">
+          <div>
+            <i class="material-icons" >language</i>
+            <span class="nodes">SDU UNIVERSITY</span>
+          </div>
+          <div>
+             <i class="material-icons" >phone</i>
+             <span class="nodes">Mobile: + 7 727 307 9565</span>
+          </div>
+          <div>
+            <i class="material-icons" >mail_outline</i>
+            <span class="nodes">cdl@sdu.edu.kz</span>
+          </div>
+        </div>
+        <span class="copyright-reserved">Copyright © All right reserved SDU University</span>
+      </div>
+   <script src="script.js"></script>
+  </body>
 </html>
