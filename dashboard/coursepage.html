@@ -1,168 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS 465 Project Management</title>
-    <link rel="stylesheet" href="style.css">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 465 Project Management (Assyl Abilakim)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;400;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <!-- Top Navigation Bar -->
-    <header>
-        <div class="top-bar">
-            <div class="logo">
-                <img src="C:\Users\sahik\OneDrive\Документы\PM\logo_sdu_general.png">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Course</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Grades</a></li>
-                    <li><a href="#">🔔</a></li>
-                    <li><a href="#">User</a></li>
-                </ul>
-            </nav>
+  <body>
+<!--  TOP BAR-->
+      <div class="top-bar">
+        <div class="left-section">
+            <a href="dashboard/page.html">
+                <img src="assets/images/logo_sdu_general.png" alt="Logo" class="logo-img">
+            </a>
         </div>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <div class="course-header">
-            <h1>CSS 465 Project Management (Assyl Abilakim)</h1>
+         <ul class="nav" style="width: 20%; padding-left: 4%;">
+          <li class="nav-item dropdown" style="margin-left: 10%;">
+              <a class="nav-link" href="#" id="dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bell-o icon"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                  <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                  <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                  <li><a class="dropdown-item" href="#">Notification 3</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown" style="margin-left: -14%;">
+              <a class="nav-link" href="#" id="dropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-comment-o icon"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                  <li><a class="dropdown-item" href="#">Message 1</a></li>
+                  <li><a class="dropdown-item" href="#">Message 2</a></li>
+                  <li><a class="dropdown-item" href="#">Message 3</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown" style="margin-left: -14%;">
+              <a class="nav-link" href="#" id="dropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-user-o icon"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown3">
+                  <li><a class="dropdown-item" href="#">Name Surname</a></li>
+              </ul>
+          </li>
+       </ul>
+
+      </div>
+
+<!--MAIN PART-->
+    <div class="main-container">
+        <div class="rectangle-2">
+          <div class="flex-row-ac">
+            <div><a href="coursepage.html" style="text-decoration: none; color: inherit" ><span>Course</span></a></div>
+            <div><span >Syllabus</span></div>
+            <div><a href="grade.html" style="text-decoration: none; color: inherit" ><span>Grades</span></a></div>
+          </div>
+          <span class="coursepage-title">
+            CSS 465 Project Management (Assyl Abilakim)
+          </span>
+          <div class="progress-container">
+            <span class="total">Total Grade: 15</span>
             <div class="progress-bar">
-                <p>Total: 1.85</p>
-                <div class="progress">
-                    <div class="progress-fill" style="width: 0%;"></div>
+              <div class="divider"></div>
+              <div class="progress-fill" ></div>
+            </div>
+            <span id="percentage">7%</span>
+          </div>
+
+            <button id="toggleAllBtn" class="btn rectangle-9">Expand All<i class="material-icons" style="height: 100%; margin: 3% 0 0 1%">arrow_downward</i></button>
+            <div id="accordion" class="accordion">
+                  <div style="margin: 2%">
+                      <div class="rectangle-b">
+                        <a data-bs-toggle="collapse" href="#collapseOne">
+                          <span class="general">General</span>
+                          <div class="vector"></div>
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="accordion-collapse collapse">
+                        <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                          <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                          <div class="rectangle-d">
+                            <div class="icon-b"></div>
+                          </div>
+                          <span class="book-title">Absolute Beginner’s guide to Project Management - book</span>
+                        </div>
+                      </div>
                 </div>
-                <p>0%</p>
-            </div>
-            <button class="collapse-button">Collapse all ▾</button>
-        </div>
 
-        <!-- Weekly Course Content -->
-        <section class="course-content">
-            <div class="week-section general">
-                <button class="week-header">General ▾</button>
-                <ul class="week-content">
-                    <li>Absolute Beginner's guide to Project Management - book</li>
-                </ul>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseTwo">
+                      <span class="general">2 September - 8 September</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-collapse collapse" >
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 1</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">2 September - 8 September ▾</button>
-                <ul class="week-content">
-                    <li><span class="icon">📄</span> Lecture 1</li>
-                </ul>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseThree">
+                      <span class="general">9 September - 15 September</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-collapse collapse" >
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 2</span>
+                    </div>
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Practice 2</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">9 September - 15 September ▾</button>
-                <ul class="week-content">
-                    <li><span class="icon">📄</span> Lecture 2</li>
-                    <li><span class="icon">📎</span> Assignment 2</li>
-                    <li><span class="icon">📎</span> Assignment 2</li>
-                </ul>
-            </div>
+                <div style="margin: 2%">
+                  <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseFour">
+                      <span class="general">16 September - 22 September</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseFour" class="accordion-collapse collapse">
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 3</span>
+                    </div>
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                    <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Assignment 1</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section current-week">
-                <button class="week-header">16 September - 22 September ▾ <span class="current-week-tag">Current week</span></button>
-                <ul class="week-content">
-                    <li><span class="icon">📄</span> Lecture 3</li>
-                </ul>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseFive">
+                      <span class="general">23 September - 29 September</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseFive" class="accordion-collapse collapse" >
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 4</span>
+                    </div>
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                    <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Practice 4</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">23 September - 29 September ▾</button>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseSix">
+                      <span class="general">30 September - 6 October</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseSix" class="accordion-collapse collapse" >
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 5</span>
+                    </div>
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                    <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Assignment 2</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">30 September - 6 October ▾</button>
-            </div>
+                <div style="margin: 2%">
+                  <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseSeven">
+                      <span class="general">7 October - 13 October</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseSeven" class="accordion-collapse collapse">
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 6</span>
+                    </div>
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Practice 6</span>
+                    </div>
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Assignment 3</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">7 October - 14 October ▾</button>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseEight">
+                      <span class="general">14 October - 20 October</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseEight" class="accordion-collapse collapse" >
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 7</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">14 October - 20 October ▾</button>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseNine">
+                      <span class="general">21 October - 27 October</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseNine" class="accordion-collapse collapse" >
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 8</span>
+                    </div>
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Practice 8</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">21 October - 27 October ▾</button>
-            </div>
+                <div style="margin: 2%">
+                  <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseTen">
+                      <span class="general">28 October - 3 November</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseTen" class="accordion-collapse collapse">
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-b"></div>
+                      </div>
+                      <span class="book-title">Well-versed’s guide to Project Management - book</span>
+                    </div>
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Practice 9</span>
+                    </div>
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Assignment 4</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">28 October - 3 November ▾</button>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseEleven">
+                      <span class="general">4 November - 10 November</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseEleven" class="accordion-collapse collapse" >
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 10</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">4 November - 10 November ▾</button>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapseTwelve">
+                      <span class="general">11 November - 17 November</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapseTwelve" class="accordion-collapse collapse" >
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 11</span>
+                    </div>
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Practice 11</span>
+                    </div>
+                    <div style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Assignment 5</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">11 November - 17 November ▾</button>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapse13">
+                      <span class="general">18 November - 24 November</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapse13" class="accordion-collapse collapse" >
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Practice 12</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">18 November - 24 November ▾</button>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapse14">
+                      <span class="general">25 November - 1 December</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapse14" class="accordion-collapse collapse" >
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 13</span>
+                    </div>
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Assignment 6</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">25 November - 1 December ▾</button>
-            </div>
+                <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapse15">
+                      <span class="general">2 December - 8 December</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapse15" class="accordion-collapse collapse" >
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Practice 14</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">2 December - 8 December ▾</button>
-            </div>
+             <div  style="margin: 2%">
+                   <div class="rectangle-b">
+                    <a data-bs-toggle="collapse" href="#collapse16">
+                      <span class="general">9 December - 15 December</span>
+                      <div class="vector"></div>
+                    </a>
+                  </div>
+                  <div id="collapse16" class="accordion-collapse collapse" >
+                    <div class="card-body" style="width: 84%; margin: 3% 0 0 6%; display: flex; flex-direction: row; gap: 2%">
+                      <div style="background-color: #1c2a5b; height: 1px; margin: 1% 0 1% 0"></div>
+                      <div class="rectangle-d">
+                        <div class="icon-e"></div>
+                      </div>
+                      <span class="book-title">Lecture 15</span>
+                    </div>
+                  </div>
+                </div>
 
-            <div class="week-section">
-                <button class="week-header">9 December - 15 December ▾</button>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-   <footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <p class="footer-heading">SDU UNIVERSITY</p>
-            <ul class="footer-links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <p class="footer-heading">FACULTIES</p>
-            <ul class="footer-links">
-                <li><a href="#">SDU Business School</a></li>
-                <li><a href="#">Faculty of Engineering</a></li>
-                <li><a href="#">Faculty of Education</a></li>
-                <li><a href="#">Faculty of Law and Social Sciences</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section">
-            <p class="footer-heading">RULES</p>
-            <ul class="footer-links">
-                <li><a href="#">Charter</a></li>
-                <li><a href="#">Safety Rules</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-section address">
-            <p class="footer-heading">ADDRESS</p>
-            <p>Almaty region, Kaskelen district, 040900, Abylay Khan 1/1</p>
+           </div>
         </div>
     </div>
+<!--      FOOTER -->
+      <div class="rectangle-14">
+        <div class="line-15"></div>
+        <div class="flex-container">
+          <div class="flex-columns">
+            <span class="titles">SDU UNIVERSITY</span>
+            <span class="nodes">About us</span>
+            <span class="nodes">Connect to us</span>
+          </div>
 
-    <div class="footer-bottom">
-        <p>SDU UNIVERSITY © All rights reserved</p>
-        <p>Mobile: +7 727 307 9655 | cid@sdu.edu.kz</p>
-    </div>
-</footer>
+          <div class="flex-columns">
+            <span class="titles">FACULTIES</span>
+            <span class="nodes">SDU BUSINESS SCHOOL</span>
+            <span class="nodes">FACULTY OF ENGINEERING <br />AND NATURAL SCIENCES</span>
+            <span class="nodes">FACULTY OF EDUCATION <br />AND HUMANITIES</span>
+            <span class="nodes">FACULTY OF LAW AND <br />SOCIAL SCIENCES</span>
+          </div>
 
-    <script src="C:\Users\sahik\OneDrive\Документы\PM\script.js"></script>
-</body>
+          <div class="flex-columns">
+            <span class="titles">RULES</span>
+            <span class="nodes">Charter</span>
+            <span class="nodes">Safety rules</span>
+          </div>
+
+          <div class="flex-columns">
+            <span class="titles">ADDRESS</span>
+            <span class="nodes">Almaty region, Karasai district.</span>
+            <span class="nodes">040900, city of Kaskelen, st. <br />Abylai Khan 1/1</span>
+          </div>
+        </div>
+        <div class="line-17"></div>
+        <div class="flex-row-daab">
+          <div>
+            <i class="material-icons" >language</i>
+            <span class="nodes">SDU UNIVERSITY</span>
+          </div>
+          <div>
+             <i class="material-icons" >phone</i>
+             <span class="nodes">Mobile: + 7 727 307 9565</span>
+          </div>
+          <div>
+            <i class="material-icons" >mail_outline</i>
+            <span class="nodes">cdl@sdu.edu.kz</span>
+          </div>
+        </div>
+        <span class="copyright-reserved">Copyright © All right reserved SDU University</span>
+      </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#toggleAllBtn').click(function() {
+            const isExpanded = $('.accordion-collapse.show').length === $('.accordion-collapse').length; // Check if any item is expanded
+
+            if (isExpanded) {
+                // If any item is expanded, collapse all and change button text
+                $('.accordion-collapse').collapse('hide');
+                $(this).text('Expand All');
+            } else {
+                // If all items are collapsed, expand all and change button text
+                $('.accordion-collapse').collapse('show');
+                $(this).text('Close All');
+            }
+        });
+    });
+</script>
+
+  </body>
 </html>

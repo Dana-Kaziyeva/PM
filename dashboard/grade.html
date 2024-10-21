@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | SDU UNIVERSITY</title>
+    <title>CSS 465 Project Management (Assyl Abilakim)</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;400;700;900&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
   <body>
 <!--  TOP BAR-->
       <div class="top-bar">
         <div class="left-section">
-            <a href="dashboard/page.html">
+            <a href="page.html">
                 <img src="assets/images/logo_sdu_general.png" alt="Logo" class="logo-img">
             </a>
         </div>
-       <ul class="nav" style="width: 20%; padding-left: 4%;">
+
+         <ul class="nav" style="width: 20%; padding-left: 4%;">
           <li class="nav-item dropdown" style="margin-left: 10%;">
               <a class="nav-link" href="#" id="dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa fa-bell-o icon"></i>
@@ -49,59 +50,57 @@
               </ul>
           </li>
        </ul>
+
       </div>
-      <div style="padding-top: 10% ">
-        <span class="my-courses">My courses</span>
-      </div>
-<!--      SEARCH BAR-->
-      <div class="rectangle-4">
-        <span class="search-icon"><i class="material-icons" style="font-size: smaller">search</i></span>
-        <input type="text" class="search-input" placeholder="Find...">
-      </div>
-<!--COURSE LIST-->
-      <div class="flex-list-column">
-        <div class="flex-list-row">
-          <div class="rectangle">
-            <span class="course-title">CSS 410 Research tools and methods</span>
-            <span class="course-teacher">(Zhumaniyaz Mamatnabiev)</span>
-            <span class="fall">Fall 2024 (2024-2025)</span>
+
+<!--MAIN PART-->
+    <div class="main-container">
+        <div class="rectangle-2" style="height: 800px">
+          <div class="flex-row-ac">
+            <div><a href="coursepage.html" style="text-decoration: none; color: inherit" ><span>Course</span></a></div>
+            <div><span >Syllabus</span></div>
+            <div><a href="grade.html" style="text-decoration: none; color: inherit" ><span>Grades</span></a></div>
           </div>
-          <div class="rectangle">
-            <span class="course-title">CSS 465 Project Management</span>
-            <span class="course-teacher">(Assyl Abilakim)</span>
-            <span class="fall">Fall 2024 (2024-2025)</span>
+          <span class="coursepage-title">
+            CSS 465 Project Management (Assyl Abilakim)
+          </span>
+          <div class="progress-container">
+            <span class="total">Total Grade: 15</span>
+            <div class="progress-bar">
+              <div class="divider"></div>
+              <div class="progress-fill" ></div>
+            </div>
+            <span id="percentage">7%</span>
           </div>
-          <div class="rectangle">
-            <span class="course-title">CSS 480 Industrial practice 3</span>
-            <span class="course-teacher">(Kuanyshbek Mamay)</span>
-            <span class="fall">Fall 2024 (2024-2025)</span>
+          <div class="rectangle-g" >
+            <div class="flex-row">
+              <span class="grade-item">Grade item</span
+              ><span class="grade">Grade</span><span class="grade-1">Grade</span
+              ><span class="feedback">Feedback</span>
+            </div>
+            <div class="flex-row-ddd">
+              <span class="activity">Activity</span>
+              <div class="rectangle2-2"><div class="icon-graph"></div></div>
+              <span class="number">1</span><span class="week-1">Week 1</span
+              ><span class="percent">100.00 %</span>
+            </div>
+            <div class="line"></div>
+            <div class="flex-row-3">
+              <span class="activity-4">Activity</span>
+              <div class="rectangle-5"><div class="icon-6"></div></div>
+              <span class="week">Week 2</span
+              ><span class="percentage-7">85.00 %</span
+              ><span class="dot">0.85</span>
+            </div>
+            <div class="line-8"></div>
+            <div class="flex-row-fac">
+              <span class="course-total">Course total</span
+              ><span class="dash">-</span><span class="number-1-85">1.85</span>
+              <div class="icon-9"></div>
           </div>
         </div>
-        <div class="flex-list-row">
-          <div class="rectangle">
-            <span class="course-title">CSS 481 Industrial practice 3</span>
-            <span class="course-teacher">(Kuanyshbek Mamay)</span>
-            <span class="fall">Fall 2024 (2024-2025)</span>
-          </div>
-          <div class="rectangle">
-            <span class="course-title">INF 394 Introduction to Geographic Information Systems</span>
-            <span class="course-teacher">(Meirman Yzdykbayev)</span>
-            <span class="fall">Fall 2024 (2024-2025)</span>
-          </div>
-          <div class="rectangle">
-            <span class="course-title">INF 440 Digital Image Processing</span>
-            <span class="course-teacher">(Magzhan Kairanbay)</span>
-            <span class="fall">Fall 2024 (2024-2025)</span>
-          </div>
         </div>
-        <div class="flex-list-row">
-          <div class="rectangle">
-            <span class="course-title">INF 426 IT Asset Management</span>
-            <span class="course-teacher">(Suraiyo Raziyeva)</span>
-            <span class="fall">Fall 2024 (2024-2025)</span>
-          </div>
-        </div>
-      </div>
+    </div>
 <!--      FOOTER -->
       <div class="rectangle-14">
         <div class="line-15"></div>
@@ -149,7 +148,26 @@
         </div>
         <span class="copyright-reserved">Copyright © All right reserved SDU University</span>
       </div>
-   <script src="script.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#toggleAllBtn').click(function() {
+                    const isExpanded = $('.accordion-collapse.show').length === $('.accordion-collapse').length; // Check if any item is expanded
+
+                    if (isExpanded) {
+                        // If any item is expanded, collapse all and change button text
+                        $('.accordion-collapse').collapse('hide');
+                        $(this).text('Expand All');
+                    } else {
+                        // If all items are collapsed, expand all and change button text
+                        $('.accordion-collapse').collapse('show');
+                        $(this).text('Close All');
+                    }
+                });
+            });
+        </script>
+
   </body>
 </html>
