@@ -41,7 +41,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .login-form {
     width: 80%;
     max-width: 350px;
@@ -55,32 +54,8 @@ h2 {
     color: #1c1c1e;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-input {
+p {
     margin-bottom: 15px;
-    padding: 12px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-}
-
-button {
-    padding: 12px;
-    background-color: #1c2a5b;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #273875;
+    color: #666;
 }
