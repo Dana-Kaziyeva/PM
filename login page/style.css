@@ -69,6 +69,20 @@ input {
     border-radius: 5px;
     width: 100%;
 }
+.forget-password {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.forget-password a {
+    color: #012d5c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forget-password a:hover {
+    text-decoration: underline;
+}
 
 button {
     padding: 12px;
