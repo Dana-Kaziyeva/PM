@@ -1,30 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-}
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f6fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+  }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-header {
+  .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    padding: 1% 2%;
     background-color: #fff;
+    width: 80%; /* Уменьшил ширину */
+    margin: 0 auto; /* Центрирует блок по горизонтали */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
+    border-radius: 25px;
+    z-index: 1000;
+    margin-bottom: 20px;
 }
 
-.logo {
-    width: 90px;
+.left-section {
+    display: flex;
+    align-items: center;
+    width: 50%;
 }
+.logo-img {
+    height: 60px;
+    border-radius: 10px;
+}
+
 
 h1 {
     text-align: center;
@@ -88,39 +102,95 @@ tbody tr:last-child td {
     background-color: #f0f0f0;
 }
 
-footer {
-    margin-top: 100px;
-    background-color: #1c2a5b;
-    color: #fff;
-    padding: 30px 0;
-    font-size: 0.9rem;
-}
-
-.footer-section {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.footer-section div {
-    width: 18%;
-}
-
-.footer-section h3 {
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin: 5px 0;
-}
-
-.footer-bottom {
+.rectangle-14 {
+    position: relative;
     text-align: center;
-    border-top: 1px solid #fff;
-    padding-top: 10px;
-}
+    width: 100vw;
+    left: 0;
+    height: 563px;
+    margin-top: 5%;
+    background: #1e2151;
+    z-index: 41;
+    overflow: visible auto;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 88%;
+    margin: 3% 6% 0 6%;
+  }
+  
+  .flex-columns {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titles {
+    color: #ffffff;
+    font-family: Battambang, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 49;
+  }
+  
+  .nodes {
+    color: #ffffff;
+    font-family: Battambang, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 54;
+  }
+  
+  .line-15, .line-17 {
+    position: relative;
+    width: 90%;
+    height: 1px;
+    margin: 3% 5% 0 5%;
+    background-color: white;
+    background-size: cover;
+    z-index: 65;
+  }
+  
+  .flex-row-daab {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 30% 0 9%;
+    gap: 5%;
+  }
+  
+  .flex-row-daab div {
+    display: flex;
+    gap: 4%;
+    flex-direction: row;
+    margin-left: 2%;
+  }
+  
+  .flex-row-daab i {
+    position: relative;
+    margin-top: 4%;
+    color: white;
+  }
+  
+  .copyright-reserved {
+    display: block;
+    position: relative;
+    margin: 0 0 0 10%;
+    color: #ffffff;
+    font-family: Battambang, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 78;
+  }
+  
