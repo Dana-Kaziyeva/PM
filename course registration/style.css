@@ -140,7 +140,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 10px; 
     margin-bottom: 20px;
 }
 
@@ -191,3 +191,4 @@ tbody tr:last-child td {
     font-weight: bold;
     background-color: #f0f0f0;
 }
+
