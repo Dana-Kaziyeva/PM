@@ -5,109 +5,6 @@
     "Source Han Sans CN", sans-serif;
 }
 
-.main-container {
-  overflow: hidden;
-}
-
-.main-container,
-.main-container * {
-  box-sizing: border-box;
-}
-
-input,
-select,
-textarea,
-button {
-  outline: 0;
-}
-
-.main-container {
-  position: relative;
-  width: 1280px;
-  height: 1836px;
-  margin: 0 auto;
-  background: #ffffff;
-  overflow: hidden;
-}
-.rectangle {
-  position: relative;
-  width: 1154px;
-  height: 99px;
-  margin: 46px 0 0 63px;
-  background: #ffffff;
-  z-index: 74;
-  border-radius: 20px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-.group-input {
-  position: absolute;
-  width: 1154px;
-  height: 99px;
-  top: 0;
-  left: 0;
-  background: transparent;
-  border: none;
-  z-index: 82;
-  outline: none;
-}
-.logo-sdu-general {
-  position: absolute;
-  width: 72px;
-  height: 72px;
-  top: 14px;
-  left: 15px;
-  background: url(./assets/images/e8c11b8e-e10c-46e2-91d3-8e920f17664b.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 75;
-  overflow: hidden;
-}
-.frame {
-  position: absolute;
-  width: 66px;
-  height: 66px;
-  top: 17px;
-  left: 1061px;
-  background: #ffffff;
-  border: 0.4px solid #1e2151;
-  z-index: 79;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-.line {
-  position: absolute;
-  width: 0.3px;
-  height: 69px;
-  top: 17px;
-  left: 96px;
-  background: url(./assets/images/b11f0f96-43e7-40d0-add8-9f78af9614aa.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 76;
-}
-.icon {
-  position: absolute;
-  width: 30.5px;
-  height: 30.5px;
-  top: 34.75px;
-  left: 1016.75px;
-  background: url(./assets/images/91c8b481-dbcc-4052-a244-74e17d672131.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 78;
-}
-.icon-1 {
-  position: absolute;
-  width: 27.333px;
-  height: 30.5px;
-  top: 34.75px;
-  left: 970.333px;
-  background: url(./assets/images/f700ca3a-b270-484a-8283-eb6c15e500d9.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 81;
-}
 .online-services {
   display: flex;
   align-items: flex-start;
@@ -199,15 +96,28 @@ button {
   text-align: left;
   white-space: nowrap;
   z-index: 13;
+  margin-bottom: 2%;
+}
+.rectangle-service {
+  position: relative;
+  width: 1154px;
+  height: 227px;
+  margin: 28px 0 0 63px;
+  background: #ffffff;
+  border: 0.3px solid #000000;
+  z-index: 50;
+  overflow: visible auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .flex-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  width: 1090px;
-  height: 45px;
-  margin: 27px 0 0 100px;
+  width: 90%;
+  height: 25%;
+  margin: 0 0 0 5%;
   z-index: 19;
 }
 .rectangle-4 {
@@ -220,21 +130,14 @@ button {
   border: 1px solid #a1a1a1;
   z-index: 15;
 }
-.order-type {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 1px;
-  left: 138px;
+.title {
   color: #000000;
+  text-align: center;
   font-family: Battambang, var(--default-font-family);
-  font-size: 24px;
+  font-size: 3vh;
   font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
+  /*line-height: 40px;*/
+  /*white-space: nowrap;*/
   z-index: 23;
 }
 .rectangle-5 {
@@ -262,7 +165,7 @@ button {
   width: 12px;
   height: 6.58px;
   margin: 11px 0 0 448px;
-  background: url(./assets/images/744b061c-592c-4126-adc7-020c032e8426.png)
+  background: url(./assets/vector.png)
     no-repeat center;
   background-size: cover;
   z-index: 30;
@@ -332,6 +235,23 @@ button {
   border: 1px solid #a1a1a1;
   z-index: 17;
 }
+.order-successfully-sent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 40px;
+  top: 61.5px;
+  left: 358.5px;
+  color: #1e2151;
+  font-family: Battambang, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 53;
+}
 .language {
   display: flex;
   align-items: flex-start;
@@ -375,7 +295,7 @@ button {
   width: 12px;
   height: 6.58px;
   margin: 11px 0 0 92px;
-  background: url(./assets/images/266ed6ae-b868-4bee-a913-b73b4ce22533.png)
+  background: url(./assets/vector.png)
     no-repeat center;
   background-size: cover;
   z-index: 31;
@@ -442,7 +362,7 @@ button {
   width: 12px;
   height: 6.58px;
   margin: 12px 0 0 160px;
-  background: url(./assets/images/c5ad4080-e603-4758-b1e0-503d55ca0ef2.png)
+  background: url(./assets/vector.png)
     no-repeat center;
   background-size: cover;
   z-index: 32;
@@ -490,413 +410,102 @@ button {
   z-index: 33;
   overflow: hidden;
 }
-.rectangle-12 {
-  position: relative;
-  width: 1280px;
+
+
+.top-bar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2% 1% 1.5%;
+    background-color: #fff;
+    width: 88%;
+    margin: 0 8% 0 4%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    z-index: 1000;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.logo-img {
+    height: 60px;
+    border-radius: 10px;
+}
+.icon {
+    font-size: 23px;
+    color: #2c3e50;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.icon:hover {
+    color: #2980b9; /* Change color on hover */
+}
+.rectangle-14 {
+  position: absolute;
+  width: 100%;
   height: 563px;
-  margin: 209px 0 0 0;
+  margin-top: 8%;
   background: #1e2151;
-  z-index: 35;
+  z-index: 41;
   overflow: visible auto;
 }
-.line-13 {
+.line-15 {
   position: relative;
-  width: 1189px;
+  width: 90%;
   height: 1px;
-  margin: 31.5px 0 0 41px;
-  background: url(./assets/images/fdcbe86e-eb23-4165-9709-560811e37ab3.png)
-    no-repeat center;
+  margin: 3% 5% 0 5%;
+  background-color: white;
   background-size: cover;
-  z-index: 57;
+  z-index: 65;
 }
-.flex-row-f {
-  position: relative;
-  width: 971px;
-  height: 45px;
-  margin: 35.5px 0 0 111px;
-  z-index: 52;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 88%;
+    margin: 3% 6% 0 6%;
 }
-.sdu-university {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 45px;
-  top: 0;
-  left: 0;
+.flex-columns {
+    display: flex;
+    flex-direction: column;
+}
+.titles {
   color: #ffffff;
   font-family: Battambang, var(--default-font-family);
   font-size: 24px;
   font-weight: 900;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 47;
-}
-.faculties {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 45px;
-  top: 0;
-  left: 336px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 52;
-}
-.rules {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 45px;
-  top: 0;
-  left: 649px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 39;
-}
-.address {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 45px;
-  top: 0;
-  left: 849px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 43;
-}
-.flex-row-d-14 {
-  position: relative;
-  width: 1059px;
-  height: 45px;
-  margin: 18px 0 0 111px;
-  z-index: 53;
-}
-.about-us {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 48;
-}
-.sdu-business-school {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 0;
-  left: 336px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 53;
-}
-.charter {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 0;
-  left: 649px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 40;
-}
-.almaty-region-karasai-district {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 5px;
-  left: 849px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 44;
-}
-.flex-row-cfa {
-  position: relative;
-  width: 1041px;
-  height: 85px;
-  margin: -5px 0 0 111px;
-  z-index: 54;
-}
-.connect-to-us {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
   line-height: 40px;
   text-align: left;
   white-space: nowrap;
   z-index: 49;
 }
-.faculty-of-engineering-and-natural-sciences {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  width: 193px;
-  height: 80px;
-  top: 0;
-  left: 336px;
+.nodes {
   color: #ffffff;
   font-family: Battambang, var(--default-font-family);
   font-size: 14px;
   font-weight: 400;
   line-height: 40px;
   text-align: left;
-  text-overflow: initial;
+  white-space: nowrap;
   z-index: 54;
-  overflow: hidden;
 }
-.safety-rules {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 0;
-  left: 649px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 41;
-}
-.city-kaskelen {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  width: 192px;
-  height: 80px;
-  top: 5px;
-  left: 849px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  text-overflow: initial;
-  z-index: 45;
-  overflow: hidden;
-}
-.help {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 40px;
-  left: 0;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 50;
-}
-.edu-humanities {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+.line-17 {
   position: relative;
-  width: 178px;
-  height: 80px;
-  margin: -5px 0 0 447px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  text-overflow: initial;
-  z-index: 55;
-  overflow: hidden;
-}
-.law-social-sciences {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  width: 164px;
-  height: 80px;
-  margin: 0 0 0 447px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  text-overflow: initial;
-  z-index: 56;
-  overflow: hidden;
-}
-.line-15 {
-  position: relative;
-  width: 1059.017px;
+  width: 80%;
   height: 1px;
-  margin: 41px 0 0 110.991px;
-  background: url(./assets/images/bd8e5e7e-3d32-4c73-a07c-f60daa8b7538.png)
-    no-repeat center;
+  margin: 3% 10% 0 10%;
+  background-color: white;
   background-size: cover;
-  z-index: 59;
-}
-.flex-row-dc {
-  position: relative;
-  width: 570.25px;
-  height: 40px;
-  margin: 5px 0 0 117.75px;
-  z-index: 71;
-}
-.sdu-university-16 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 0;
-  left: 31.25px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 63;
-}
-.mobile-number {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 0;
-  left: 226.25px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
   z-index: 65;
 }
-.email {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  height: 40px;
-  top: 0;
-  left: 466.25px;
-  color: #ffffff;
-  font-family: Battambang, var(--default-font-family);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 71;
-}
-.icon-17 {
-  position: absolute;
-  width: 19px;
-  height: 25px;
-  top: 6.5px;
-  left: 196.75px;
-  background: url(./assets/images/58632e49-110d-4433-82f0-d5f7e040fc75.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 67;
-}
-.icon-18 {
-  position: absolute;
-  width: 23.5px;
-  height: 23.5px;
-  top: 7.25px;
-  left: -0.5px;
-  background: url(./assets/images/746f22ff-7fc4-4f84-aeae-b4bb9cc3954b.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 62;
-}
-.icon-19 {
-  position: absolute;
-  width: 23.5px;
-  height: 18.5px;
-  top: 9.75px;
-  left: 434.5px;
-  background: url(./assets/images/804c3d02-5dc9-4255-8793-c7ed3de4278f.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 70;
-}
-.copyright {
+.copyright-reserved {
   display: block;
   position: relative;
-  height: 40px;
-  margin: 5px 0 0 118px;
+  margin: 0 0 0 10%;
   color: #ffffff;
   font-family: Battambang, var(--default-font-family);
   font-size: 14px;
@@ -904,5 +513,48 @@ button {
   line-height: 40px;
   text-align: left;
   white-space: nowrap;
-  z-index: 72;
+  z-index: 78;
+}
+.flex-row-daab{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 30% 0 9%;
+    gap: 5%;
+}
+.flex-row-daab div{
+    display: flex;
+    gap: 4%;
+    flex-direction: row;
+    margin-left: 2%;
+}
+.flex-row-daab i{
+  position: relative;
+  margin-top: 4%;
+  color: white;
+}
+a{
+   text-decoration: none;
+    color: inherit;
+}
+.rectangle-50 {
+  position: relative;
+  width: 1052px;
+  height: 164px;
+  margin: 32px 0 0 51px;
+  background: #ffffff;
+  border: 0.5px solid #a1a1a1;
+  z-index: 51;
+  border-radius: 5px;
+}
+.image {
+  position: absolute;
+  width: 187px;
+  height: 98px;
+  top: 32.5px;
+  left: 217.5px;
+  background: url(./assets/images/0f1582549df7ba3aea2b123bcf28731ae417aa98.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 52;
 }
