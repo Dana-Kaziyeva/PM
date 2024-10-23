@@ -42,39 +42,35 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 5px; /* Расстояние между элементами навигации */
-  }
-  
-  .nav-item {
-    position: relative;
-  }
-  
-  .nav-link {
+    gap: 5px; /* Уменьшаем расстояние между элементами */
+}
+
+.nav-item {
+    padding: 0; /* Убираем отступы */
+}
+
+.nav-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px; /* Компактные размеры иконок */
-    border-radius: 50%; /* Круглая форма */
+    width: 30px; /* Немного уменьшенные размеры */
+    height: 30px;
+    border-radius: 50%;
     background-color: transparent;
     transition: background-color 0.2s, transform 0.2s;
-  }
-  
-  .nav-link:hover {
-    background-color: rgba(0, 0, 255, 0.1); /* Уменьшенный синий фон при наведении */
-    transform: scale(1.1); /* Лёгкое увеличение при наведении */
-  }
-  
+    margin: 0 5px; /* Добавляем небольшой горизонтальный отступ */
+}
+
+
   .icon {
     font-size: 23px;
     color: #2c3e50;
-    margin-left: 20px;
+    margin: 0 5px;
+    padding: 0;
     cursor: pointer;
     transition: color 0.3s ease;
   }
-  .icon:hover {
-    color: #2980b9; /* Change color on hover */
-  }
+
   
  
   .flex-row-daab{
@@ -215,36 +211,59 @@ strong {
     right: 10px;
 }
 
-a {
-    width: 450px; 
-    height: 300px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 15px;
-    transition: transform 0.3s ease;
-}
 
-
-a:hover {
-    transform: translateY(-15px);
-}
 
 .icon {
     width: 80%; 
     height: auto;
     border-radius: 20px; 
 }
+/* Стилизуем другие ссылки, чтобы они оставались с оригинальными стилями */
+.info-section a, .academic-section a {
+  width: 450px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.info-section a:hover, .academic-section a:hover {
+  transform: translateY(-15px);
+}
+
 
 .rectangle-14 {
-    position: absolute;
-    width: 100%;
-    height: 563px;
-    margin-top: 8%;
-    background: #1e2151;
-    z-index: 41;
-    overflow: visible auto;
-  }
+  position: absolute;
+  width: 100%;
+  height: 563px;
+  margin-top: 8%;
+  background: #1e2151;
+  z-index: 41;
+  overflow: visible auto;
+}
+/* Стили для всех ссылок в футере */
+.rectangle-14 a {
+  width: auto; /* Убираем размеры */
+  height: auto;
+  display: inline; /* Возвращаем к обычному потоку */
+  align-items: unset;
+  justify-content: unset;
+  margin: 0;
+  transition: none; /* Отключаем анимацию */
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rectangle-14 a:hover {
+  transform: none; /* Убираем эффект сдвига при наведении */
+  color: inherit;
+  text-decoration: none;
+}
+
+
   .line-15 {
     position: relative;
     width: 90%;
