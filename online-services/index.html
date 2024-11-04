@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Services</title>
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <title>Grades List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;400;700;900&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +16,7 @@
       <div class="top-bar">
         <div class="left-section">
             <a href="page.html">
-                <img src="assets/logo_sdu_general.png" alt="Logo" class="logo-img">
+                <img src="assets/images/logo_sdu_general.png" alt="Logo" class="logo-img">
             </a>
         </div>
        <ul class="nav" style="width: 20%; padding-left: 4%;">
@@ -52,116 +52,190 @@
           </li>
        </ul>
       </div>
-      <div style="padding-top: 5%; ">
+      <div style="padding-top: 10%; " >
       </div>
 
-      <span class="online-services">Online services</span>
-      <div class="flex-row-d">
-        <div class="rectangle-2">
-          <span class="send-order">Send order</span>
-        </div>
-        <div class="rectangle-3"><span class="orders">Orders</span></div>
-      </div>
-      <span class="order-transcripts-online" id="instructionText">
-          Here you can order transcripts and references online.
-      </span>
-<div class="rectangle-service" id="form1">
-    <div style="width: 100%; height: 100%;">
-      <div class="flex-row">
-        <button class="rectangle-4">
-          <span class="title">Order type</span>
-        </button>
-        <div class="rectangle-5">
-          <div class="rectangle-6"><div class="vector"></div></div>
-        </div>
-      </div>
-     <div class="flex-row">
-        <button class="rectangle-4">
-          <span class="title">Description of Document</span>
-        </button>
-        <div class="rectangle-5">
-        </div>
-      </div>
-      <div class="flex-row">
-        <button class="rectangle-4">
-          <span class="title">Language</span>
-        </button>
-        <div class="rectangle-5">
-          <div class="rectangle-6"><div class="vector"></div></div>
-        </div>
-      </div>
-      <div class="flex-row">
-        <button class="rectangle-4">
-          <span class="title">Delivery Method</span>
-        </button>
-        <div class="rectangle-5">
-          <div class="rectangle-6"><div class="vector"></div></div>
-        </div>
-      </div>
- </div>
-</div>
-<div class="rectangle-service" id="form2" style="display: none">
-    <div class="rectangle-50">
-      <div class="image"></div>
-      <span class="order-successfully-sent">Order successfully sent!</span>
-    </div>
-</div>
-<!--        <form style="width: 80%; margin: 4% 0 0 9%;">-->
-<!--          <div class="form-row" style="display: flex; flex-direction: row">-->
-<!--            <div class="col">-->
-<!--              <span class="form-control">Order type</span>-->
-<!--            </div>-->
-<!--            <div class="col">-->
-<!--             <div class="dropdown" style="position: absolute">-->
-<!--                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--                  Select order type-->
-<!--                </a>-->
-<!--                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">-->
-<!--                  <a class="dropdown-item"  id="showTable1">Transcript</a>-->
-<!--                  <a class="dropdown-item"  id="showTable2">Information about studying place(SDU)</a>-->
-<!--                  <a class="dropdown-item"  id="showTable3">Certificate №6</a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="form-row" style="display: flex; flex-direction: row">-->
-<!--            <div class="col">-->
-<!--               <span class="form-control">Description of Document</span>-->
-<!--            </div>-->
-<!--            <div class="col">-->
-<!--              <input type="text" class="form-control" placeholder="Last name">-->
-<!--            </div>-->
-<!--          </div>-->
-<!--            <div class="form-row" style="display: flex; flex-direction: row">-->
-<!--            <div class="col">-->
-<!--               <span class="form-control">Language</span>-->
-<!--            </div>-->
-<!--            <div class="col">-->
-<!--              <input type="text" class="form-control" placeholder="Last name">-->
-<!--            </div>-->
-<!--          </div>-->
-<!--            <div class="form-row" style="display: flex; flex-direction: row">-->
-<!--            <div class="col">-->
-<!--             <span class="form-control">Delivery Method</span>-->
-<!--            </div>-->
-<!--            <div class="col">-->
-<!--              <input type="text" class="form-control" placeholder="Last name">-->
-<!--            </div>-->
-<!--          </div>-->
 
-<!--        </form>-->
-      <button class="rectangle-11"><span class="send">Send</span></button>
-      <span class="certificate-rules" id="dearStudent1">
-          Dear student, please read the rules for obtaining certificate on
-        my.sdu.edu.kz portal<br />Choose the type of certificate you need<br />You
-        can order each certificate only once a week<br />If you need the
-        original certificate or transcript:<br />You can pick up from the
-        university from 13.30-15.30 on weekdays (we do not work on weekends)<br />Your
-        relatives, friends can pick up instead of you<br />Processing takes:<br />Certificate
-        with EDS 3 working days<br />Original certificate without EDS 3-5
-        working days</span>
+<!--MAIN PART-->
 
-  <!--      FOOTER -->
+      <div class="rectangle-2">
+        <span class="grades-list">Grades List</span>
+        <div class="flex-row-aded">
+          <span class="year-and-term">Year and term:</span>
+          <div class="dropdown" style="margin-left: 30%;">
+            <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              2024-2025 1 Term
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <a class="dropdown-item"  id="showTable1">2024-2025 1 Term</a>
+              <a class="dropdown-item"  id="showTable2">2023-2024 2 Term</a>
+            </div>
+          </div>
+        </div>
+        <span class="term-5">2024-2025 1 Term</span>
+        <div class="table-container" style="display: block;" id="timetable1">
+         <table class="timetable1" >
+            <thead>
+            <tr>
+              <th rowspan="2">Code</th>
+              <th rowspan="2" style="width: 40%">Course Name</th>
+              <th rowspan="2">Credits</th>
+              <th rowspan="2">ECTS</th>
+              <th rowspan="2">Total</th>
+              <th rowspan="2">Latter Grade</th>
+              <th colspan="2">Reset Exam Application</th>
+              <tr>
+               <th>RE1</th>
+               <th>RE2</th>
+              </tr>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>CSS 410</td>
+              <td style="text-align: left">Research tools and methods</td>
+              <td>3</td>
+              <td>5</td>
+              <td></td>
+              <td>IP</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>CSS 465</td>
+              <td style="text-align: left">Project Management</td>
+              <td>3</td>
+              <td>5</td>
+              <td></td>
+              <td>IP</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>CSS 480</td>
+              <td style="text-align: left">Industrial practice 3</td>
+              <td>2</td>
+              <td>3</td>
+              <td></td>
+              <td>IP</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>CSS 481</td>
+              <td style="text-align: left">Industrial practice 3</td>
+              <td>1</td>
+              <td>2</td>
+              <td></td>
+              <td>IP</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>INF 228</td>
+              <td style="text-align: left">UX/UI design</td>
+              <td>3</td>
+              <td>5</td>
+              <td></td>
+              <td>IP</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>INF 421</td>
+              <td style="text-align: left">Security in Computer Networks</td>
+              <td>3</td>
+              <td>5</td>
+              <td></td>
+              <td>IP</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>INF 428</td>
+              <td style="text-align: left">Data Ethics and Applied Analitics</td>
+              <td>3</td>
+              <td>5</td>
+              <td></td>
+              <td>IP</td>
+              <td></td>
+              <td></td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="table-container" style="display: none;" id="timetable2">
+         <table class="timetable2" >
+            <thead>
+            <tr>
+              <th >Code</th>
+              <th style="width: 50%">Course Name</th>
+              <th >Credits</th>
+              <th >ECTS</th>
+              <th >Total</th>
+              <th >Latter Grade</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>CSS 381</td>
+              <td style="text-align: left">Industrial practice 2</td>
+              <td>1</td>
+              <td>1</td>
+              <td>100</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>INF 368</td>
+              <td style="text-align: left">The Go programming language</td>
+              <td>3</td>
+              <td>5</td>
+              <td>97</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>INF 369</td>
+              <td style="text-align: left">Data visuallisation and storytelling</td>
+              <td>3</td>
+              <td>5</td>
+              <td>87</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td>INF 379</td>
+              <td style="text-align: left">Introduction to self-driving cars</td>
+              <td>3</td>
+              <td>5</td>
+              <td>100</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>INF 392</td>
+              <td style="text-align: left">Blockchain technology</td>
+              <td>3</td>
+              <td>5</td>
+              <td>91</td>
+              <td>A-</td>
+            </tr>
+            <tr>
+              <td>MDE 172</td>
+              <td style="text-align: left">Philosophy</td>
+              <td>3</td>
+              <td>5</td>
+              <td>95</td>
+              <td>A</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+
+
+
+<!--      FOOTER -->
       <div class="rectangle-14">
         <div class="line-15"></div>
         <div class="flex-container">
@@ -224,19 +298,51 @@
         </div>
         <span class="copyright-reserved">Copyright © All right reserved SDU University</span>
       </div>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script>
-      const sendButton = document.querySelector('.rectangle-11');
-      const form1 = document.getElementById('form1');
-      const form2 = document.getElementById('form2');
-      const text = document.getElementById('instructionText');
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
-      sendButton.addEventListener('click', function() {
-        // Hide form1 and display form2
-        form1.style.display = 'none';
-        form2.style.display = 'block';
-        text.style.display = 'none';
-      });
+
+    <script>
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        const dropdownButton = document.getElementById('dropdownMenu2');
+        const termText = document.querySelector('.term-5');
+
+        const table1 = document.getElementById('timetable1');
+        const table2 = document.getElementById('timetable2');
+
+        dropdownItems.forEach(item => {
+          item.addEventListener('click', function() {
+            const selectedText = this.textContent;
+            // Change the dropdown button text
+            dropdownButton.textContent = selectedText;
+            // Change the term-5 text
+            termText.textContent = selectedText;
+
+              if (selectedText === '2024-2025 1 Term') {
+                table1.style.display = 'block';
+                table2.style.display = 'none';
+              } else if (selectedText === '2023-2024 2 Term') {
+                table1.style.display = 'none';
+                table2.style.display = 'block';
+              }
+          });
+        });
     </script>
+
+  <script>
+  document.getElementById('showTable1').addEventListener('click', function() {
+    document.getElementById('table1').style.display = 'block';
+    document.getElementById('table2').style.display = 'none';
+  });
+
+  document.getElementById('showTable2').addEventListener('click', function() {
+    document.getElementById('table1').style.display = 'none';
+    document.getElementById('table2').style.display = 'block';
+  });
+</script>
   </body>
 </html>
+
+
+
