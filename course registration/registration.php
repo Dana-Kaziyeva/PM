@@ -8,7 +8,7 @@ try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    die("Ошибка подключения к базе данных: " . $e->getMessage());
+    die("Error connecting to the database: " . $e->getMessage());
 }
 
 $total_price = 0;
@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
     if ($stmt->rowCount() > 0) {
         $student = $stmt->fetch(PDO::FETCH_ASSOC);
     } else {
-        die("Студент не найден!");
+        die("Student not found!");
     }
 
     $sql_courses = "
@@ -53,7 +53,7 @@ if (isset($_GET['id'])) {
         $total_price += $course['price'];
     }
 } else {
-    die("ID студента не передан!");
+    die("Student ID has not been transmitted!");
 }
 ?>
 
