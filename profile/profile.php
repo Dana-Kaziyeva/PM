@@ -153,7 +153,7 @@ $conn->close();
                 </tr>
                 <tr>
                     <td><strong>Last login date:</strong></td>
-                    <td>5th December 2024</td>
+                    <td>6th December 2024</td>
                 </tr>
                 <tr>
                     <td><strong>Registration date:</strong></td>
