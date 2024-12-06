@@ -23,7 +23,7 @@ body {
 }
 
 .left-section {
-    background-color: #172248;  
+    background-color: #172248;
     width: 40%;
     display: flex;
     justify-content: center;
@@ -69,6 +69,7 @@ input {
     border-radius: 5px;
     width: 100%;
 }
+
 .forget-password {
     text-align: right;
     margin-bottom: 15px;
