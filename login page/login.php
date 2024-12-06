@@ -1,8 +1,7 @@
 <?php
-// Включение отображения ошибок для диагностики
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
-require 'db.php';
+require 'db.php';  
 session_start();
 
 $message = "";
@@ -12,17 +11,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = trim($_POST['password']);
 
     try {
-        $stmt = $conn->prepare("SELECT * FROM users WHERE email = :email");
+        
+        $stmt = $conn->prepare("SELECT * FROM students WHERE email = :email");
         $stmt->bindParam(':email', $email);
         $stmt->execute();
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        $student = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        if ($user && $password === $user['password']) {
-            $_SESSION['user_id'] = $user['id'];  
-            $_SESSION['user_email'] = $user['email'];
+        if ($student && $password === $student['password']) {
+            $_SESSION['student_id'] = $student['id'];
+            $_SESSION['student_email'] = $student['email'];
 
             header("Location: dashboard.php");
-            exit();  
+            exit();
         } else {
             $message = "Invalid email or password!";
         }
@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
